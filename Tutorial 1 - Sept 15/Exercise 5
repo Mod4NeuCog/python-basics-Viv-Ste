@@ -1,0 +1,20 @@
+#initializing variables
+start = float(0)
+membranep = float(-70)
+
+def main (membranep):
+    #the inital membrane potential
+    membranep = float(-70) #this is an integer
+
+    #this code block is a loop and breaks the loop once the neuron has reached its critical threshold of -55 to fire and AP
+    while membranep < -50:
+        spikevalue =int(input('You are a presynaptic neuron, enter a spike value in mv:'))
+        if spikevalue == 0:
+            continue
+        else:
+            membranep = membranep + spikevalue
+    return(membranep)
+
+#this section causes the use of the main function
+if start == 0:
+    print('Neuron fires an membrane potential. Its new membrane potential is:', main(membranep))
