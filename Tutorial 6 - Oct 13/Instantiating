@@ -1,0 +1,15 @@
+#from name_of_directory.name_of_class_file import name_of_the_class
+from Neuron import Neuron
+
+from Pyramidal_Neur import Pyramidal_Neur
+from Ovoid_Neur import Ovoid_Neur
+
+
+def main ():
+#    neuron1 = Neuron("glia", 5)
+    pyramid1 = Pyramidal_Neur(1, 2, 3)
+    ovoid1 = Ovoid_Neur(10)
+    return (neuron1, pyramid1, ovoid1)
+
+if __name__ == '__main__':
+    print (main())
